@@ -22,13 +22,5 @@ body {
 
 .country-list-element {
   display: flex;
-  /* padding-bottom: 5px; */
-  /* justify-content: center; */
   align-items: center;
-}
-
-p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
 }
