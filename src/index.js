@@ -25,7 +25,7 @@ function onInput(event) {
            if (country.length > 1 && country.length < 10) {
                oneCountry.innerHTML = ''; 
                const countryMarkup = country.map(({ name, flags }) => 
-                    `<li class = "country-list-element"><img src = "${flags.png}" alt = "${name.official}" width = "30" > <p style = "margin: 5px 0 5px 10px;"> ${name.official} </p> </li>`)
+                    `<li style = "display: flex; align-items: center;"><img src = "${flags.png}" alt = "${name.official}" width = "30" > <p style = "margin: 5px 0 5px 10px;"> ${name.official} </p> </li>`)
                     .join('');
                countryList.innerHTML = countryMarkup;
                 // console.log(countryMarkup);
@@ -37,7 +37,7 @@ function onInput(event) {
             //    const langList = object.values(country.languages);
             //    console.log(langList);
                const oneCountryMarkup = country.map(({name, capital, flags, languages, population}) => 
-                   `<div class = "country-list-element"> <img style="margin-right: 10px;" src = "${flags.png}" alt = "${name.official}" width = "30" > <h2> ${name.official} </h2> </div>
+                   `<div style = "display: flex; align-items: center;"> <img style="margin-right: 10px;" src = "${flags.png}" alt = "${name.official}" width = "30" > <h2> ${name.official} </h2> </div>
                     <p> <strong> Capital: </strong> ${capital}</p>
                     <p> <strong>Population: </strong> ${population}</p>
                     <p> <strong>Languges: </strong> ${Object.values(languages)}</p>`)
